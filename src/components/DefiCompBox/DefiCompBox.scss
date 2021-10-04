@@ -1,0 +1,27 @@
+.defi-comp-box{
+    height: 310px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #272628;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+
+    .icon-container{
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        img{
+            height: 160px;
+            width: auto;
+        }
+    }
+
+    p{
+        color: white;
+    }
+}

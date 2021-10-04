@@ -1,0 +1,20 @@
+h2{
+    font-size: 62px;
+    font-family: EuclidBold;
+    margin: 0;
+
+    &[small = "true"]{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h2{
+        font-size: 60px;      
+        
+        &[small = "true"]{
+            font-size: 35px;
+        }
+    }
+
+}

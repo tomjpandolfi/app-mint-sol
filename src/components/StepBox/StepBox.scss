@@ -1,0 +1,65 @@
+.step-box{
+    display: flex;
+    height: 75px;
+    width: calc(100% - 10px);
+    background: linear-gradient(to right, #A54CFF 0% ,#8046dd 50%, #4c85ff 100%);
+    background-size: 300% !important;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &:hover {
+        animation-name: gradient;
+        -webkit-animation-name: gradient;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        background-color: #A099B3;
+
+    }
+    &::before{
+        width: 100%;
+        height: 10px;
+        top: 100%;
+        transform: skew(45deg);
+        transform-origin: top;
+    }
+    &::after{
+        height: 100%;
+        width: 10px;
+        left: 100%;
+        transform: skew(0, 45deg);
+        transform-origin: left;
+        border-bottom: 1px solid black;
+    }
+
+    *{
+        color: white !important;
+        font-size: 19px;
+    }
+
+    .number{
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100%;
+    }  
+  }

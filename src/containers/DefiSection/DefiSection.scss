@@ -1,0 +1,47 @@
+.defi-section{
+    h2{
+        margin-bottom: 25px;
+    }
+    p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .boxes-container{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .defi-section{
+        .boxes-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-gap: unset;
+            &>*{
+                width: 47%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .defi-section{
+        p{
+            width: 100%;
+        }
+        .boxes-container{
+            display: block;
+
+            &>*{
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.roadmap-section{
+    h2{
+        margin-bottom: 25px;
+    }
+    .map-container{
+        position: relative;
+
+        .line{
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            z-index: -1;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 2px;
+        }
+
+        .text-container{
+            padding: 8px 0;
+            background-color: #0A0A0A;
+            z-index: 10;
+            margin-bottom: 35px;
+        }
+
+    }
+}
